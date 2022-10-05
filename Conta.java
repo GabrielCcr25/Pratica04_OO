@@ -1,19 +1,10 @@
-package br.com.Questao4;
+package br.com.inteface;
 
-public abstract class Conta {
-	private double saldo;
-
-	public double getSaldo() {
-		return saldo;
-	}
-
-	public void setSaldo(double saldo) {
-		this.saldo = saldo;
-	}
-
-	public abstract void imprimeExtrato();{
+public interface Conta {
+	 void depositar(double valor);
+	 void sacar(double valor);
+	 double getSaldo();
 		
-	}
 	
 
 }
